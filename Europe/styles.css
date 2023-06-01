@@ -1,0 +1,53 @@
+/* styles.css is our stylesheet and gives all the rules for how our site will look */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: Star_Wars;
+    src: url(Starjedi.ttf);
+}
+
+
+body {
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(55 63 81);
+    padding: 10px 10px 10px 20px;
+}
+
+h1 {
+    font-family: Star_Wars, 'Times New Roman', Times, serif;
+    color: rgb(204 41 54);
+    margin: 0px 10px 20px 0px;
+    font-size: xx-large;
+}
+
+h2 {
+    margin: 20px 5px 5px 0px;
+}
+
+p {
+    margin: 4px 5px 0px 0px;
+}
+
+a:link {
+    color: red;
+    text-decoration: none;
+    margin: 4px 5px 0px 0px;
+}
+
+a:visited {
+    color: orange;
+    margin: 4px 5px 0px 0px;
+}
+
+ul {
+    margin: 5px 0px 15px 20px;
+}
+
+img {
+    margin-top: 10px;
+}
