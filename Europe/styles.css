@@ -6,10 +6,60 @@
 }
 
 @font-face {
-    font-family: Star_Wars;
+    font-family: starwars;
     src: url(Starjedi.ttf);
 }
 
+@font-face {
+    font-family: oldlondon;
+    src: url(OldLondon.ttf);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 300px 60%;
+    grid-gap: 15px;
+    padding: 10px;
+}
+
+.ukbody {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 15px;
+    padding: 10px;
+}
+
+.ukbody h2 {
+    color: rgb(200 16 46);
+    text-align: center;
+}
+
+.card {
+    margin: 5px;
+    padding: 5px;
+    border: 2px rgb(204 41 54) solid;
+    border-radius: 10px;
+
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.intro {
+    padding: 20px;
+}
+
+.countryintro {
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.mainbody {
+    padding: 10px;
+}
 
 body {
     background-color: white;
@@ -19,9 +69,16 @@ body {
 }
 
 h1 {
-    font-family: Star_Wars, 'Times New Roman', Times, serif;
+    font-family: starwars, 'Times New Roman', Times, serif;
     color: rgb(204 41 54);
-    margin: 0px 10px 20px 0px;
+    margin: 0px 10px 0px 0px;
+    font-size: 50px;
+    text-align: center;
+}
+
+.ukh1 {
+    color: rgb(1 33 105);
+    font-family: oldlondon, 'Times New Roman', Times, serif;
     font-size: xx-large;
 }
 
@@ -34,20 +91,38 @@ p {
 }
 
 a:link {
-    color: red;
+    color: blue;
     text-decoration: none;
     margin: 4px 5px 0px 0px;
 }
 
+a:hover {
+    color: magenta;
+    text-decoration: underline;
+}
+
 a:visited {
-    color: orange;
-    margin: 4px 5px 0px 0px;
+    color: purple;
 }
 
 ul {
     margin: 5px 0px 15px 20px;
 }
 
-img {
-    margin-top: 10px;
+/* Media query is used to change the layout when the screen changes size */
+/* Break-point is 800px */
+@media only screen and (max-width: 800px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+    .intro {
+        border: 2px black solid;
+        border-radius: 10px;
+        padding: 5px;
+    }
+    .mainbody {
+        border: 2px black solid;
+        border-radius: 10px;
+        padding: 10px;
+    }
 }

@@ -1,0 +1,23 @@
+/* Style sheet */
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.the_fa {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 15px;
+    padding: 10px;
+}
+
+.premier_league {
+    background: lavender;
+    padding: 10px;
+}
+
+.championship {
+    background-color: crimson;
+    padding: 10px;
+}
