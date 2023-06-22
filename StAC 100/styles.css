@@ -1,0 +1,54 @@
+/* Style sheet */
+
+*{
+    padding: 0px;
+    margin: 0px;
+    background-color: white;
+}
+
+.container{
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-bottom: 2.5%;
+    background-color: white;
+}
+
+.banner{
+    max-width: 100%;
+    height: auto;
+}
+
+.fakelinks{
+    display: grid;
+    grid-template-columns: 80px minmax(1fr);
+    grid-gap: 40px;
+    color: rgb(34, 96, 150);
+        
+}
+
+.fakelink{
+    text-align: center;
+}
+
+.body{
+    display: grid;
+    grid-template-columns: 60% 200px;
+    grid-gap: 40px;
+}
+
+.body p{
+    color: rgb(34, 96, 150);
+}
+
+.whatson {
+    color: rgb(34, 96, 150);
+}
+
+.whatson h3{
+    font-style: bold;
+}
+
+.video img{
+    max-width: 100%;
+    height: auto;
+}
